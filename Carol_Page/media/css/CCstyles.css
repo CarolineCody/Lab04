@@ -3,6 +3,10 @@
 	font-family: Garamond, serif;
 }
 
+.rounded{
+	border-radius: 50% !important;
+}
+
 .navi:hover{
 	background-color: #5b5b5b;
 }

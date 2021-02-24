@@ -1,7 +1,11 @@
 <!-- Home Page -->
 <!doctype html>
 <html lang="en">
-  <head>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="../resources/js/my_scripts.js"></script>
+	<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,10 +15,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="../resources/css/my_style.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="homePage">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <a class="navbar-brand" href="home.html">
-		<img class="rounded-circle" src="../resources/img/cu_boulder_logo.jpg" alt="" width="30" height="30">
+		<img class="rounded-circle" src="../resources/img/cu_boulder_logo.jpg" alt="" width="30px" height="30px">
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -51,14 +55,34 @@
 
 		
 		-->
-		<h1>Welcome to the Secret CU Boulder Football Page!</h1>
-		<img src="../resources/img/boulderhalloweencolor.gif" alt="I do not get it either" height="400px" width="400px">
-		<p class="small">This site is apparently has a old comic panel.</p>
-		<a href="https://cubuffs.com/"> Official CU Buff site.</a>
+		<div class="row" style="padding-top: 10%;">
+			<div class = "col-5">
+				<img src="../resources/img/boulderhalloweencolor.gif" alt="I do not get it either" height="400px" width="400px">
+			</div>
+			<div class = "col-7">
+				<div class = "jumbotron">
+					<h1>Welcome to the Secret CU Boulder Football Page!</h1>
+					<p class="small">This site is apparently has a old comic panel.</p>
+					<a href="https://cubuffs.com/"> Official CU Buff site.</a>
+					<table style="border-width: 0px;">
+						<tr style="border-width: 0px;">
+							<td style="border-width: 0px;">
+								<button class="btn" style="background-color:white; color: black;" onclick="changeColor('#ffffff');">Default Background</button>
+							</td>
+							<td style="border-width: 0px;">
+								<button class="btn" style="background-color:#0000ff; color: #ffffff;" onclick="changeColor('#0000ff');">Blue Background</button>
+							</td>
+							<td style="border-width: 0px;">
+								<button class="btn" style="background-color:#ff0000; color: #ffffff;" onclick="changeColor('#ff0000');">Red Background</button>
+							</td>
+							<td style="border-width: 0px;">
+								<button class="btn" style="background-color:#008000; color: #ffffff;" onclick="changeColor('#008000');">Green Background</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 	</div>
-  
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
